@@ -2,11 +2,11 @@ import { Form } from "react-router-dom";
 
 export default function Contact() {
     const contact = {
-        first: "Your",
-        last: "Name",
+        first: "Victor",
+        last: "Gustavo",
         avatar: "https://robohash.org/you.png?size=200x200",
-        twitter: "your_handle",
-        notes: "Some notes",
+        threads: "mynameisv.sh",
+        notes: "Completei o React Router!!!",
         favorite: true,
     };
 
@@ -34,13 +34,13 @@ export default function Contact() {
                     <Favorite contact={contact} />
                 </h1>
 
-                {contact.twitter && (
+                {contact.threads && (
                     <p>
                         <a
                             target="_blank"
-                            href={`https://twitter.com/${contact.twitter}`}
+                            href={`https://www.threads.com/@mynameisv.sh/${contact.threads}`}
                         >
-                            {contact.twitter}
+                            {contact.threads}
                         </a>
                     </p>
                 )}
